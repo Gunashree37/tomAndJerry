@@ -4,7 +4,8 @@ var tom, tomImg1,tomImg2;
 var jerry, jerryImg1,jerryImg2;
 
 function preload() {
-    bg = loadImage("images/garden.png");
+   
+    
     tomImg1= loadAnimation("images/tomOne.png");
     tomImg2=loadAnimation("images/tomTwo.png","images/tomThree.png");
     tomImg3= loadAnimation("images/tomFour.png");
@@ -17,19 +18,19 @@ function preload() {
 function setup(){
     canvas = createCanvas(1000,800);
 
-    tom = createSprite(870, 600);
-    tom.addAnimation("tomSleeping", tomImg1);
-    tom.scale = 0.2;
-
-    jerry = createSprite(200, 600);
-    jerry.addAnimation("jerryStanding", jerryImg1);
-    jerry.scale = 0.15;
+   
+    
+    
+    
+    
+    
+    
 
 }
 
 function draw() {
 
-    background(bg);
+    background("pink");
 
     if(tom.x - jerry.x < (tom.width - jerry.width)/2)
     { 
